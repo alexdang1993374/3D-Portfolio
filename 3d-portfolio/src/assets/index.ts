@@ -24,9 +24,8 @@ import threejs from "./tech/threejs.svg";
 import zipmex from "./company/zipmex.png";
 import opn from "./company/opn.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import seba from "./seba.png";
+import wiiizy from "./wiiizy.png";
 
 export {
   logo,
@@ -52,7 +51,6 @@ export {
   threejs,
   zipmex,
   opn,
-  carrent,
-  jobit,
-  tripguide,
+  seba,
+  wiiizy,
 };
