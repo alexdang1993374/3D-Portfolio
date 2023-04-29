@@ -27,6 +27,10 @@ import opn from "./company/opn.png";
 import seba from "./seba.png";
 import wiiizy from "./wiiizy.png";
 
+import andy from "./people/andy.jpeg";
+import ben from "./people/ben.jpeg";
+import tao from "./people/tao.jpeg";
+
 export {
   logo,
   backend,
@@ -53,4 +57,7 @@ export {
   opn,
   seba,
   wiiizy,
+  andy,
+  ben,
+  tao,
 };

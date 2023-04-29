@@ -1,5 +1,7 @@
 import {
+  andy,
   backend,
+  ben,
   creator,
   css,
   docker,
@@ -15,6 +17,7 @@ import {
   redux,
   seba,
   tailwind,
+  tao,
   typescript,
   web,
   wiiizy,
@@ -159,27 +162,27 @@ export interface ITestimonial {
 const testimonials: ITestimonial[] = [
   {
     testimony:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Alex's ability to work under pressure while maintaining a high level of performance and delivering outstanding results has been vital to our team's success.",
+    name: "Benjamin Lim",
+    designation: "Engineering Lead",
+    company: "Zipmex",
+    image: ben,
   },
   {
     testimony:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Having Alex on our team has been a game-changer. His enthusiasm and passion for his work is contagious.",
+    name: "Andy Nguyen",
+    designation: "Sr. Frontend Engineer",
+    company: "Zipmex",
+    image: andy,
   },
   {
     testimony:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I'm always impressed by the quality and reliability of Alex's work. He's truly committed to ensuring our products meet the highest standards.",
+    name: "Pimpakarn Wannasirikun",
+    designation: "Quality Assurance",
+    company: "Zipmex",
+    image: tao,
   },
 ];
 
@@ -243,27 +246,6 @@ const projects: IProject[] = [
     image: wiiizy,
     source_code_link: "https://github.com/alexdang1993374/Wiiizy",
   },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
