@@ -1,10 +1,8 @@
 /* eslint-disable react-refresh/only-export-components */
-import { motion } from "framer-motion";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
 import ExperienceCard from "./ExperienceCard";
 import SectionTitle from "./SectionTitle";
 
@@ -16,10 +14,7 @@ const Experience = () => {
         headText="Work Experience"
       />
 
-      <motion.div
-        variants={slideIn("down", "tween", 0.2, 1)}
-        className="mt-20 flex flex-col"
-      >
+      <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
@@ -28,7 +23,7 @@ const Experience = () => {
             />
           ))}
         </VerticalTimeline>
-      </motion.div>
+      </div>
     </>
   );
 };
