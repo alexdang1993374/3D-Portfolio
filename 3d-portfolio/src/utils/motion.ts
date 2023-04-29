@@ -96,9 +96,9 @@ export const slideIn = (
 };
 
 export const staggerContainer = (
-  staggerChildren: number,
+  staggerChildren?: number,
   delayChildren?: number
-): Animation => {
+): Variants => {
   return {
     hidden: {},
     show: {

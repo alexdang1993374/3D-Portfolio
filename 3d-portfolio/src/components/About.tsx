@@ -1,8 +1,10 @@
+/* eslint-disable react-refresh/only-export-components */
 import { motion } from "framer-motion";
 import { services } from "../constants";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import ServiceCard from "./ServiceCard";
+import { SectionWrapper } from "../hoc";
 
 const About = () => {
   const delay = 0;
@@ -35,4 +37,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper({ Component: About, idName: "about" });
