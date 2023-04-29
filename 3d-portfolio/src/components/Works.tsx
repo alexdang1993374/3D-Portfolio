@@ -2,18 +2,14 @@
 import { motion } from "framer-motion";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { styles } from "../styles";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import ProjectCard from "./ProjectCard";
+import SectionTitle from "./SectionTitle";
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-
-        <h2 className={styles.sectionHeadText}>Personal Projects.</h2>
-      </motion.div>
+      <SectionTitle subText="My work" headText="Personal Projects" />
 
       <div className="w-full flex">
         <motion.p

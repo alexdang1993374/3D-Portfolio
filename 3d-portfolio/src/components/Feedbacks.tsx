@@ -1,10 +1,9 @@
 /* eslint-disable react-refresh/only-export-components */
-import { motion } from "framer-motion";
 import { testimonials } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { textVariant } from "../utils/motion";
 import FeedbackCard from "./FeedbackCard";
+import SectionTitle from "./SectionTitle";
 
 const Feedbacks = () => {
   return (
@@ -12,11 +11,7 @@ const Feedbacks = () => {
       <div
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
-        </motion.div>
+        <SectionTitle subText="What others say" headText="Testimonials" />
       </div>
 
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>

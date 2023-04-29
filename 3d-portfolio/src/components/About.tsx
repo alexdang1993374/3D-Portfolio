@@ -1,19 +1,15 @@
 /* eslint-disable react-refresh/only-export-components */
 import { motion } from "framer-motion";
 import { services } from "../constants";
-import { styles } from "../styles";
-import { fadeIn, textVariant } from "../utils/motion";
-import ServiceCard from "./ServiceCard";
 import { SectionWrapper } from "../hoc";
+import { fadeIn } from "../utils/motion";
+import SectionTitle from "./SectionTitle";
+import ServiceCard from "./ServiceCard";
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      <SectionTitle subText="Introduction" headText="Overview" />
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
