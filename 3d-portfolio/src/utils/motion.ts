@@ -76,7 +76,7 @@ export const slideIn = (
   type: TransitionType,
   delay: number,
   duration: number
-): Animation => {
+): Variants => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
