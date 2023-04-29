@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import { useState, useRef } from "react";
+import { useState, useRef, ChangeEvent, FormEvent } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
@@ -13,18 +13,59 @@ interface IEmailForm {
   message: string;
 }
 
+const initialForm: IEmailForm = {
+  name: "",
+  email: "",
+  message: "",
+};
+
 const Contact = () => {
   const formRef = useRef(null);
-  const [form, setForm] = useState<IEmailForm>({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [form, setForm] = useState<IEmailForm>(initialForm);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const handleChange = (e) => {};
+  const serviceId = import.meta.env.VITE_SERVICE_ID || "";
+  const templateId = import.meta.env.VITE_TEMPLATE_ID || "";
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY || "";
 
-  const handleSubmit = (e) => {};
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        serviceId,
+        templateId,
+        {
+          from_name: form.name,
+          to_name: "Alex",
+          from_email: form.email,
+          to_email: "alexdang1993374@gmail.com",
+          message: form.message,
+        },
+        publicKey
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you! I will get back to you as soon as possible.");
+          setForm(initialForm);
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Something went wrong.");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -38,7 +79,7 @@ const Contact = () => {
 
         <form
           ref={formRef}
-          onSumbit={handleSubmit}
+          onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">

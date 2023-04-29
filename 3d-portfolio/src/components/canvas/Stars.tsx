@@ -10,7 +10,9 @@ type PointsProps = ComponentProps<typeof Points>;
 const Stars = (props: PointsProps) => {
   const ref = useRef<THREE.Points | null>(null);
 
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+  const sphere: Float32Array = random.inSphere(new Float32Array(5000), {
+    radius: 1.2,
+  });
 
   useFrame((_, delta) => {
     if (ref.current) {
