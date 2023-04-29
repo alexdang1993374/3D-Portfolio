@@ -10,7 +10,10 @@ import SectionTitle from "./SectionTitle";
 const Tech = () => {
   return (
     <>
-      <SectionTitle subText="Tech I'm skilled with" headText="Expertise" />
+      <SectionTitle
+        subText="Technology I'm skilled with"
+        headText="My Expertise"
+      />
 
       <div className="mt-20 flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((technology) => (
