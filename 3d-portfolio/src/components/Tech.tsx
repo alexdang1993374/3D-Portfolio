@@ -20,7 +20,7 @@ const Tech = () => {
           // <div className="w-28 h-28" key={technology.name}>
           //   <BallCanvas icon={technology.icon} />
           // </div>
-          <Tilt key={technology.name}>
+          <Tilt key={technology.name} tiltMaxAngleX={30} tiltMaxAngleY={30}>
             <motion.div
               variants={textVariant()}
               className="dark-green-pink-gradient w-20 h-20 rounded-full flex justify-center items-center"
