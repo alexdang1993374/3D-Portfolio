@@ -8,7 +8,7 @@ interface Animation {
   show: object;
 }
 
-export const textVariant = (delay: number): Variants => {
+export const textVariant = (delay?: number): Variants => {
   return {
     hidden: {
       y: -50,
@@ -20,7 +20,7 @@ export const textVariant = (delay: number): Variants => {
       transition: {
         type: "spring" as TransitionType,
         duration: 1.25,
-        delay: delay,
+        delay: delay || 0,
       },
     },
   };
@@ -103,7 +103,7 @@ export const staggerContainer = (
     hidden: {},
     show: {
       transition: {
-        staggerChildren: staggerChildren,
+        staggerChildren: staggerChildren || 0,
         delayChildren: delayChildren || 0,
       },
     },
