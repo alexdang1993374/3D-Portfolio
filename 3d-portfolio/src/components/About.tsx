@@ -7,11 +7,9 @@ import ServiceCard from "./ServiceCard";
 import { SectionWrapper } from "../hoc";
 
 const About = () => {
-  const delay = 0;
-
   return (
     <>
-      <motion.div variants={textVariant(delay)}>
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
 
         <h2 className={styles.sectionHeadText}>Overview.</h2>
