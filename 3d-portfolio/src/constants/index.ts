@@ -197,6 +197,7 @@ export interface IProject {
   tags: ITag[];
   image: string;
   source_code_link: string;
+  website: string;
 }
 
 const projects: IProject[] = [
@@ -220,6 +221,7 @@ const projects: IProject[] = [
     ],
     image: seba,
     source_code_link: "https://github.com/alexdang1993374/Seba",
+    website: "https://seba-45e88.web.app/",
   },
   {
     name: "Wiiizy",
@@ -245,6 +247,7 @@ const projects: IProject[] = [
     ],
     image: wiiizy,
     source_code_link: "https://github.com/alexdang1993374/Wiiizy",
+    website: "https://wiiizy.vercel.app/",
   },
 ];
 
