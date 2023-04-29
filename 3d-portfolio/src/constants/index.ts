@@ -205,7 +205,20 @@ const testimonials = [
   },
 ];
 
-const projects = [
+interface ITag {
+  name: string;
+  color: string;
+}
+
+export interface IProject {
+  name: string;
+  description: string;
+  tags: ITag[];
+  image: string;
+  source_code_link: string;
+}
+
+const projects: IProject[] = [
   {
     name: "Car Rent",
     description:
