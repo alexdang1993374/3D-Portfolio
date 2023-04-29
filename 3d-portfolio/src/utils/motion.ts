@@ -1,12 +1,14 @@
-type Direction = "left" | "right" | "up" | "down";
-type TransitionType = "spring" | "tween";
+import { Variants } from "framer-motion";
+
+type Direction = "left" | "right" | "up" | "down" | "";
+type TransitionType = "spring" | "tween" | "";
 
 interface Animation {
   hidden: object;
   show: object;
 }
 
-export const textVariant = (delay: number): Animation => {
+export const textVariant = (delay: number): Variants => {
   return {
     hidden: {
       y: -50,
@@ -29,7 +31,7 @@ export const fadeIn = (
   type: TransitionType,
   delay: number,
   duration: number
-): Animation => {
+): Variants => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
