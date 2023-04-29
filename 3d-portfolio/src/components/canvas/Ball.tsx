@@ -17,7 +17,6 @@ const Ball = ({ icon }: IBallCanvas) => {
   const [decal] = useTexture([icon]);
 
   return (
-    // @ts-expect-error: Suppressing TypeScript error due to incorrect library type definitions
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
 
@@ -46,7 +45,7 @@ const Ball = ({ icon }: IBallCanvas) => {
 
 const BallCanvas = ({ icon }: IBallCanvas) => {
   return (
-    <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
 
