@@ -27,6 +27,7 @@ import opn from "./company/opn.png";
 
 import seba from "./seba.png";
 import wiiizy from "./wiiizy.png";
+import quotedeck from "./quotedeck.png";
 
 import andy from "./people/andy.jpeg";
 import ben from "./people/ben.jpeg";
@@ -59,6 +60,7 @@ export {
   opn,
   seba,
   wiiizy,
+  quotedeck,
   andy,
   ben,
   tao,

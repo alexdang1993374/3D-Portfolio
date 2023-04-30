@@ -13,6 +13,7 @@ import {
   mongodb,
   nodejs,
   opn,
+  quotedeck,
   reactjs,
   redux,
   seba,
@@ -248,6 +249,24 @@ const projects: IProject[] = [
     image: wiiizy,
     source_code_link: "https://github.com/alexdang1993374/Wiiizy",
     website: "https://wiiizy.vercel.app/",
+  },
+  {
+    name: "QuoteDeck",
+    description:
+      "Your ultimate destination for reliving iconic TV moments! Embark on a nostalgia-fueled journey with favorites like Spongebob, The Simpsons, and It's Always Sunny in Philadelphia - one legendary line at a time.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vercel",
+        color: "green-text-gradient",
+      },
+    ],
+    image: quotedeck,
+    source_code_link: "https://github.com/alexdang1993374/QuoteDeck",
+    website: "https://quotedeck.vercel.app/",
   },
 ];
 
