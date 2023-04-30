@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { github, linkedin } from "../assets";
+import ProjectLink from "./ProjectLink";
 
 interface IEmailForm {
   name: string;
@@ -77,10 +79,22 @@ const Contact = () => {
 
         <h3 className={styles.heroHeadText}>Contact.</h3>
 
+        <div className="flex gap-3 mt-1">
+          <ProjectLink
+            link={"https://github.com/alexdang1993374"}
+            image={github}
+          />
+
+          <ProjectLink
+            link={"https://www.linkedin.com/in/alexdang1993374/"}
+            image={linkedin}
+          />
+        </div>
+
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-6 flex flex-col gap-8"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
