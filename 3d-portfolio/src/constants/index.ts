@@ -205,7 +205,7 @@ const projects: IProject[] = [
   {
     name: "Seba",
     description:
-      "A heartfelt homage to the legendary Nujabes, where you can immerse yourself in a curated collection of my favorite soul-stirring tunes. Paying tribute to the timeless tunes of the GOAT. Rest in beats.",
+      "A heartfelt homage to the legendary Nujabes, where you can immerse yourself in a curated collection of my favorite soul-stirring tunes. Paying tribute to the timelessness of the GOAT. Rest in beats.",
     tags: [
       {
         name: "react",
