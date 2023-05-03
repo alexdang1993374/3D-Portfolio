@@ -203,6 +203,32 @@ export interface IProject {
 
 const projects: IProject[] = [
   {
+    name: "Wiiizy",
+    description:
+      "Experience the magic of Mother Nature at Wiiizy, your one-stop online shop for premium cannabis products. Elevate your senses and soar high with a carefully curated selection, all just a click away!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "shopify",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: wiiizy,
+    source_code_link: "",
+    website: "https://wiiizy.vercel.app/",
+  },
+  {
     name: "Seba",
     description:
       "A heartfelt homage to the legendary Nujabes, where you can immerse yourself in a curated collection of my favorite soul-stirring tunes. Paying tribute to the timelessness of the GOAT. Rest in beats.",
@@ -223,32 +249,6 @@ const projects: IProject[] = [
     image: seba,
     source_code_link: "https://github.com/alexdang1993374/Seba",
     website: "https://seba-45e88.web.app/",
-  },
-  {
-    name: "Wiiizy",
-    description:
-      "Experience the magic of Mother Nature at Wiiizy, your one-stop online shop for premium cannabis products. Elevate your senses and soar high with a carefully curated selection, all just a click away!",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nextjs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "shopify",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: wiiizy,
-    source_code_link: "https://github.com/alexdang1993374/Wiiizy",
-    website: "https://wiiizy.vercel.app/",
   },
   {
     name: "QuoteDeck",

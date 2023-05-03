@@ -29,7 +29,9 @@ const ProjectCard = ({ index, project }: IProjectCard) => {
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
             <ProjectLink link={website} image={websitePic} />
 
-            <ProjectLink link={source_code_link} image={github} />
+            {source_code_link !== "" && (
+              <ProjectLink link={source_code_link} image={github} />
+            )}
           </div>
         </div>
 
