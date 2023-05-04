@@ -216,7 +216,7 @@ const projects: IProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "shopify",
+        name: "stripe",
         color: "pink-text-gradient",
       },
       {
