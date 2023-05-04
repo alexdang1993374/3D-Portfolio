@@ -225,8 +225,8 @@ const projects: IProject[] = [
       },
     ],
     image: wiiizy,
-    source_code_link: "https://github.com/alexdang1993374/Wiiizy",
-    website: "https://wiiizy.vercel.app/",
+    source_code_link: "",
+    website: "https://www.wiiizy.store",
   },
   {
     name: "Seba",
