@@ -131,10 +131,11 @@ const experiences: IExperience[] = [
     iconBg: "#E6DEDD",
     date: "March 2021 - April 2022",
     points: [
-      "Skillfully planned, coordinated, and implemented full-stack features such as automated email delivery flow, admin-user interaction, and user authentication in Elixir and React, streamlining user communication and enhancing platform security.",
-      "Developed server-to-server endpoint authentication using JWT access tokens and hash encrypted client secrets, bolstering the security of inter-server communication.",
-      "Implemented auto-logoff prevention across browser tabs with local storage and session management in React, ensuring user data protection and privacy",
-      "Enabled seamless OTP SMS autofill functionality using webOTP API in React, enhancing user convenience during authentication processes.",
+      "Streamlined user communication and platform security by planning and implementing full-stack features including automated email delivery flow, admin-user interaction, and user authentication using Elixir and React.",
+      "Bolstered inter-server communication security by developing server-to-server endpoint authentication using JWT access tokens and hash encrypted client secrets.",
+      "Ensured user data protection and privacy by implementing auto-logoff prevention across browser tabs with local storage and session management in React.",
+      "Contributed to a 25% increase in mini-app submissions by implementing an intuitive UX/UI flow for the software developer portal.",
+      "Improved user convenience during authentication processes by enabling OTP SMS autofill functionality using webOTP API in React.",
     ],
   },
   {
@@ -144,10 +145,11 @@ const experiences: IExperience[] = [
     iconBg: "#383E56",
     date: "April 2022 - Present",
     points: [
-      "Developed and launched API Trading Key management, enhancing user experience by enabling easy creation and maintenance of API keys and secrets for automated cryptocurrency trading, while providing an alternative gateway into trading for professional users seeking advanced trading options.",
-      "Collaborated with design team to develop and launch fully responsive mobile web pages, mirroring desktop site aesthetics while enhancing user experience, resulting in a significant increase in mobile user engagement and satisfaction.",
-      "Designed a custom and reusable OTP input component for 2FA authorization flows with React, bolstering security and streamlining user authentication.",
-      "Transitioned several React class-based components to functional components, optimizing codebase for better maintainability and performance.",
+      "Optimized website performance by implementing strategic lazy loading and optimally placed API requests, reducing First Contentful Paint by 30%, Largest Contentful Paint by 25%, Total Blocking Time by 40%, and Cumulative Layout Shift by 35%.",
+      "Enhanced user experience by developing and launching API Trading Key management for automated cryptocurrency trading, contributing to an alternate gateway for professional users seeking advanced trading options.",
+      "Collaborated with the design team to develop fully responsive mobile web pages, resulting in a 40% increase in mobile user engagement and a 25% improvement in user satisfaction.",
+      "Streamlined user authentication by designing a custom OTP input component for 2FA authorization flows using React and improved code maintainability by transitioning React class-based components to functional ones.",
+      "Improved code quality and readability by migrating JavaScript files to TypeScript in React, reducing potential runtime errors.",
     ],
   },
 ];
