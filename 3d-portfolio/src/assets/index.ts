@@ -25,6 +25,7 @@ import threejs from "./tech/threejs.svg";
 
 import zipmex from "./company/zipmex.png";
 import opn from "./company/opn.png";
+import appman from "./company/appman.png";
 
 import seba from "./seba.png";
 import wiiizy from "./wiiizy.png";
@@ -60,6 +61,7 @@ export {
   threejs,
   zipmex,
   opn,
+  appman,
   seba,
   wiiizy,
   quotedeck,

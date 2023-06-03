@@ -13,6 +13,7 @@ import {
   mongodb,
   nodejs,
   opn,
+  appman,
   quotedeck,
   reactjs,
   redux,
@@ -125,11 +126,24 @@ export interface IExperience {
 
 const experiences: IExperience[] = [
   {
+    title: "Front End Engineer",
+    company_name: "AppMan",
+    icon: appman,
+    iconBg: "#383E56",
+    date: "July 2016 - March 2019",
+    points: [
+      "Increased online traffic by 40% in 6 months through implementation of responsive design.",
+      "Optimized server-side logic, reducing website latency by 20% and increasing the efficiency of client-server communications.",
+      "Authored comprehensive documentation for several APIs, enhancing understandability and ease of integration for developers.",
+      "Implemented comprehensive accessibility and SEO optimization strategies, bolstering the company's web visibility and promoting inclusivity for users with disabilities.",
+    ],
+  },
+  {
     title: "Full Stack Engineer",
     company_name: "Opn",
     icon: opn,
     iconBg: "#E6DEDD",
-    date: "March 2021 - April 2022",
+    date: "March 2019 - April 2021",
     points: [
       "Planned and implemented full-stack features including automated email delivery flow, admin-user interaction, and user authentication using Elixir and React, enhancing platform security and streamlining user communication.",
       "Developed server-to-server endpoint authentication using JWT access tokens and hash encrypted client secrets, bolstering the security of inter-server communication.",
@@ -138,11 +152,11 @@ const experiences: IExperience[] = [
     ],
   },
   {
-    title: "Front End Engineer",
+    title: "Senior Front End Engineer",
     company_name: "Zipmex",
     icon: zipmex,
     iconBg: "#383E56",
-    date: "April 2022 - Present",
+    date: "April 2021 - Present",
     points: [
       "Optimized website performance by strategically implementing lazy loading and API requests, resulting in a 30% reduction in First Contentful Paint and a 40% decrease in Total Blocking Time.",
       "Developed and launched API Trading Key management for automated cryptocurrency trading, offering an alternative gateway for professional users and improving user satisfaction by 25%.",
