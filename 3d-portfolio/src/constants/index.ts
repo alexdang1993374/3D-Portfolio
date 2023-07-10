@@ -23,6 +23,7 @@ import {
   typescript,
   web,
   wiiizy,
+  latent,
   zipmex,
 } from "../assets";
 
@@ -281,6 +282,33 @@ const projects: IProject[] = [
     image: quotedeck,
     source_code_link: "https://github.com/alexdang1993374/QuoteDeck",
     website: "https://quotedeck.vercel.app/",
+  },
+  {
+    name: "Latent",
+    description:
+      "A full stack medication tracking application. It is built with Next.js 13, using the new app router, and optimized with React server components for an efficient, high-performing user experience.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: latent,
+    source_code_link:
+      "https://github.com/alexdang1993374/latent-product-technical",
+    website: "https://latent-product-technical.vercel.app/",
   },
 ];
 

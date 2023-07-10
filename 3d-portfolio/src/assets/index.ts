@@ -30,6 +30,7 @@ import appman from "./company/appman.png";
 import seba from "./seba.png";
 import wiiizy from "./wiiizy.png";
 import quotedeck from "./quotedeck.png";
+import latent from "./latent.png";
 
 import andy from "./people/andy.jpeg";
 import ben from "./people/ben.jpeg";
@@ -65,6 +66,7 @@ export {
   seba,
   wiiizy,
   quotedeck,
+  latent,
   andy,
   ben,
   tao,
