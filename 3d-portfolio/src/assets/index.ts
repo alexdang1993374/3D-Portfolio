@@ -28,7 +28,7 @@ import opn from "./company/opn.png";
 import appman from "./company/appman.png";
 
 import seba from "./seba.png";
-import wiiizy from "./wiiizybanana.png";
+import wiiizy from "./wiiizy.png";
 import quotedeck from "./quotedeck.png";
 import latent from "./latent.png";
 
