@@ -26,6 +26,7 @@ import threejs from "./tech/threejs.svg";
 import zipmex from "./company/zipmex.png";
 import opn from "./company/opn.png";
 import appman from "./company/appman.png";
+import cityelectricsupply from "./company/cityelectricsupply.png";
 
 import seba from "./seba.png";
 import wiiizy from "./wiiizy.png";
@@ -70,4 +71,5 @@ export {
   andy,
   ben,
   tao,
+  cityelectricsupply,
 };

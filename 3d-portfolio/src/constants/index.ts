@@ -25,6 +25,7 @@ import {
   wiiizy,
   latent,
   zipmex,
+  cityelectricsupply,
 } from "../assets";
 
 export const navLinks = [
@@ -168,7 +169,7 @@ const experiences: IExperience[] = [
   {
     title: "Principle Front End Engineer",
     company_name: "City Electric Supply",
-    icon: zipmex,
+    icon: cityelectricsupply,
     iconBg: "#FFFFFF",
     date: "August 2023 - Present",
     points: [
